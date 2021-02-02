@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Create"
+    android:id="@+id/activi1">
+    <EditText
+        android:id="@+id/namemain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Your name"
+        android:textSize="20sp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/dess"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:gravity="left"
+        android:text="Glucose Parameter"
+        android:textSize="15sp"></TextView>
+
+    <EditText
+        android:id="@+id/blood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:hint="Enter Blood Sugar Level"
+        android:inputType="number"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:textSize="20sp">
+    </EditText>
+    <TextView
+        android:id="@+id/dess1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Respiration Parameter"
+        android:gravity="left"
+        android:layout_below="@+id/blood"
+        android:textSize="15sp"></TextView>
+    <Spinner
+        android:id="@+id/spin1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/blood"
+        android:layout_marginTop="20dp"
+        android:contextClickable="true"
+        android:entries="@array/Respiration"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:textAlignment="center"
+        ></Spinner>
+    <TextView
+        android:id="@+id/dess2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Coranary Heart disease prediction"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:layout_below="@id/spin1"></TextView>
+    <Spinner
+        android:id="@+id/spin2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/spin1"
+        android:contextClickable="true"
+        android:entries="@array/heart_Rate"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:textAlignment="center"
+        ></Spinner>
+    <TextView
+        android:id="@+id/dess3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Hypoxemia prediction"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:layout_below="@id/spin2">
+    </TextView>
+    <EditText
+        android:id="@+id/oxygen"
+        android:layout_below="@id/spin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter Oxygen Percentage"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:inputType="number"
+        android:textSize="20sp">
+    </EditText>
+
+    <Button
+        android:id="@+id/viewres"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oxygen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:text="View Result"
+        android:shadowColor="@color/colorAccent"
+        android:elevation="20dp"
+        android:textSize="20sp"></Button>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_menu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cnb_menuResource="@menu/menu"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/corners"
+        app:cnb_radius="8dp"
+        app:cnb_orientationMode="horizontal"
+        android:layout_margin="5dp"
+        android:elevation="8dp"/>
+
+
+</RelativeLayout>

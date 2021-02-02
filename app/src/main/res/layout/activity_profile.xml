@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Profile">
+    <TextView
+        android:id="@+id/Nameview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:text="name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Your Medical Records"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/dess"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="Glucose Parameter"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:layout_below="@id/hint"
+        ></TextView>
+    <TextView
+        android:id="@+id/res1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:text="blood level"
+        android:textSize="20sp"
+        android:layout_below="@id/dess">
+    </TextView>
+    <TextView
+        android:id="@+id/dess1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Respiration Parameter"
+        android:gravity="left"
+        android:layout_below="@id/res1"
+        android:textSize="15sp"></TextView>
+    <TextView
+        android:id="@+id/res2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Heart level"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:textSize="20sp"
+        android:layout_below="@id/dess1">
+    </TextView>
+    <TextView
+        android:id="@+id/dess2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Coranary Heart disease prediction"
+        android:gravity="left"
+        android:layout_below="@id/res2"
+        android:textSize="15sp"></TextView>
+    <TextView
+        android:id="@+id/res3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Respiration level"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:textSize="20sp"
+        android:layout_below="@id/dess2">
+    </TextView>
+    <TextView
+        android:id="@+id/dess3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Hypoxemia prediction"
+        android:gravity="left"
+        android:layout_below="@id/res3"
+        android:textSize="15sp"></TextView>
+    <TextView
+        android:id="@+id/res4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Oxygen level"
+        android:textSize="20sp"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:inputType="number"
+        android:layout_below="@id/dess3">
+    </TextView>
+    <TextView
+        android:id="@+id/dess4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Asthma prediction"
+        android:gravity="left"
+        android:layout_below="@id/res4"
+        android:textSize="15sp"></TextView>
+    <TextView
+        android:id="@+id/res5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Asthma Prediction"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:layout_below="@id/dess4">
+    </TextView>
+
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_menu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/corners"
+        android:elevation="8dp"
+        app:cnb_menuResource="@menu/menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="5dp" />
+
+</RelativeLayout>

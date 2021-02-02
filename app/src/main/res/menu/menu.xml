@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/orders"
+        android:title="M-Records"
+        android:icon="@drawable/edit" />
+    <item
+        android:id="@+id/profile"
+        android:title="My health Status"
+        android:icon="@drawable/profile" />
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fitness Pro</string>
+    <array name="heart_Rate">
+        <item>less than 120</item>
+        <item>120 - 129</item>
+        <item>130 - 139</item>
+        <item>140 and Above</item>
+    </array>
+
+    <array name="Respiration">
+        <item>New Born</item>
+        <item>6 months</item>
+        <item>12 months</item>
+        <item>1-4 years</item>
+        <item>12 and Above</item>
+        <item>20 - 30 breaths</item>
+    </array>
+</resources>
