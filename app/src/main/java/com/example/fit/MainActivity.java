@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements
     private boolean authInProgress = false;
     private GoogleApiClient mApiClient;
     ChipNavigationBar chipNavigationBar;
-    double stepvalue,a,b,c = 0,d;
+    double stepvalue,a,b,c = 0,d,g;
     private  final String TAG = MainActivity.class.getSimpleName();
 
 
